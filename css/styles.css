@@ -454,6 +454,9 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-property: background-color;
+    transition-duration: var(--default-time);
+    transition-timing-function: var(--default-timing-function);
 }
 .modal-close:hover, .modal-close:focus {cursor: pointer;
                                         background-color: var(--ocean);
@@ -584,7 +587,7 @@ svg {
     color: var(--ocean);
 }
 
-.input-wrapper input:focus {
+.input-wrapper input:focus, .input-wrapper textarea:focus {
     outline: none;
     border: 1px solid var(--ocean);
 }
@@ -607,11 +610,11 @@ svg {
             padding: 4px 3px;
             border-radius: 4px;}
 
-input:checked + .tc-icon {
+.tc-checkbox:checked + .tc-icon {
     background-color: var(--ocean);
 }
 .termsandcond-link{ text-decoration: underline;}
-.termsandcond {display: flex;
+.tc-group {display: flex;
                 gap: 8px; 
                 align-items: center;}
 
