@@ -570,7 +570,7 @@ svg {
 .input-wrapper input {
     width: 100%;
     padding-block: 8px;
-    padding-inline-start: 32px;
+    padding-inline-start: 38px;
     border-radius: 4px;
     height:40px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
