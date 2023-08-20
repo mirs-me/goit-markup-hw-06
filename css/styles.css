@@ -455,7 +455,9 @@ svg {
     justify-content: center;
     align-items: center;
 }
-.modal-close:hover, .modal-close:focus {cursor: pointer;}
+.modal-close:hover, .modal-close:focus {cursor: pointer;
+                                        background-color: var(--ocean);
+                                        color: var(--white);}
 .is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -484,3 +486,155 @@ svg {
     top: 44px;
     border-radius: 2px;
 }
+
+.footer-subscribe {
+    margin-left: 80px;
+}
+
+.footer-subscribe-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.email-input { width: 264px;
+                height: 40px;
+                border-radius: 4px;
+                border: 1px solid var(--white, #FFF);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+                background-color: var(--navyblue);
+                color: var(--white);
+                margin-right: 24px;
+            }
+.footer-subscribe input { padding: 8px 16px;
+                            color: var(--white);}
+.subscribe-form {
+    display: flex;
+}
+.subscribe-button { width: 165px;
+                    height: 40px;
+                    border-style: none;
+                    border-radius: 4px;
+                    display: inline-flex;
+                    padding: 8px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 16px;
+                    background-color: var(--iris);
+                    font-family: 'Roboto', sans-serif;
+                    color: var(--white);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.64px;
+                    cursor: pointer;
+                    transition-property: background-color;
+                    transition-duration: var(--default-time);
+                    transition-timing-function: var(--default-timing-function);
+                }
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--ocean);
+}
+
+.order-form-title {padding-top: 72px;
+                    text-align: center;
+                    margin-bottom: 16px;
+                    }
+.order-form{ padding: 0 24px;
+            color: var(--lightslate);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.17;
+            letter-spacing: 0.48px;
+             }
+.input-wrapper {
+    position: relative;
+    margin-bottom: 8px;
+    margin-top: 4px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50% 0;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding-block: 8px;
+    padding-inline-start: 32px;
+    border-radius: 4px;
+    height:40px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+}
+.input-wrapper textarea {
+    width: 100%;
+    padding-block: 8px;
+    padding-inline-start: 16px;
+    border-radius: 4px;
+    height: 120px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+}
+.input-wrapper:focus-within .input-icon {
+    color: var(--ocean);
+}
+
+.input-wrapper input:focus {
+    outline: none;
+    border: 1px solid var(--ocean);
+}
+
+.tc-checkbox { display: block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    color: #fff;
+}
+.hidden {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.tc-icon{   position: absolute;
+            fill: var(--white);
+            padding: 4px 3px;
+            border-radius: 4px;}
+
+input:checked + .tc-icon {
+    background-color: var(--ocean);
+}
+.termsandcond-link{ text-decoration: underline;}
+.termsandcond {display: flex;
+                gap: 8px; 
+                align-items: center;}
+
+.submit-button{ padding: 16px 32px;
+                border-style: none;
+                border-radius: 4px;
+                background: var(--iris);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+                color: var(--white, #FFF);
+                width: 169px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.5;
+                letter-spacing: 0.64px;
+                display: flex;
+                margin: 24px auto;
+                justify-content: center;
+                cursor: pointer;
+                transition-property: background-color;
+                transition-duration: var(--default-time);
+                transition-timing-function: var(--default-timing-function);
+                    }
+.submit-button:hover,.submit-button:focus {
+                        background-color: var(--ocean);
+                    }
